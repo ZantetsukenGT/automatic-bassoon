@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<meta charset="UTF-8">
+		<script type="text/javascript" src="../libraries/p5.js"></script>
+		<script type="text/javascript" src="../libraries/p5.dom.js"></script>
+		<script type="text/javascript" src="../libraries/esenciales.js"></script>
+		<title>Cyste+ Manager</title>
+	</head>
+	<body style="background-color:#d9d9d9">
+		<center>
+				<br><br><br><br>
+			<h1>Cyste+ Manager 1.0</h1>
+			<h2>Administracion: Administrar Pensum</h2>
+				<br><br>
+			Cargar Pensum:
+				<br><br>
+			<button id="bCargarPensum" onclick="CargarPensum()">Cargar</button>
+				<hr><hr>
+			Nombre: <input type="text" id="textBoxNombre" placeholder="e.g: EDD">
+				<br><br>
+			Codigo: <input type="text" id="textBoxCodigo" placeholder="e.g: 772">
+				<br><br>
+			# Creditos: <input type="text" id="textBoxCreditos" placeholder="e.g: 3">
+				<br><br>
+			Area: <input type="text" id="textBoxArea" placeholder="e.g: Area de Desarrollo de software">
+
+
+				<hr>
+
+
+			Prerrequisito: <input type="text" id="textBoxPre" placeholder="e.g: 772">
+				<br><br>
+			<button id="bAgregarPre" onclick="AgregarPre()">Agregar Prerrequisito</button>
+
+
+
+				<hr>
+
+
+
+			<button id="bAgregarCurso" onclick="AgregarCurso()">Agregar Curso</button>
+
+				<hr><hr>
+
+			<input type="text" id="textBoxModificarEliminar" placeholder="e.g: 772"">
+			<button id="bBuscar" onclick="BuscarCurso()">Buscar</button>
+				<br><br>
+			<button id="bModificar" onclick="ModificarCurso()">Modificar Curso</button>
+			<button id="bEliminar" onclick="EliminarCurso()">Eliminar Curso</button>
+
+
+
+				<hr><hr>
+
+
+
+			<button id="bVisualizarGrafo" onclick="VisualizarGrafo()">Visualizar (Grafo)</button>
+			<button id="bVisualizarMatriz" onclick="VisualizarMatriz()">Visualizar (Matriz)</button>
+
+
+
+				<hr><hr>
+
+
+
+			<button id="bSalir" onclick="CambiarPagina('http://192.168.56.1:8080/administracion/AdminCP.html')">Regresar</button>
+		</center>
+		<script type="text/javascript" src="Pensum.js"></script>
+	</body>
+</html>

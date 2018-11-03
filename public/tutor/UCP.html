@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<meta charset="UTF-8">
+		<script type="text/javascript" src="../libraries/p5.js"></script>
+		<script type="text/javascript" src="../libraries/p5.dom.js"></script>
+		<script type="text/javascript" src="../libraries/esenciales.js"></script>
+		<title>Cyste+ Manager</title>
+	</head>
+	<body style="background-color:#d9d9d9">
+		<center>
+			<br><br><br><br>
+		<h1>Cyste+ Manager 1.0</h1>
+		<h2>Tutor: Control Panel</h2>
+			<hr><hr>
+		<button id="bEstudiantes" onclick="CambiarPagina('http://192.168.56.1:8080/tutor/Estudiantes.html')">Mis Estudiantes</button>
+			<br><br>
+		<button id="bActividades" onclick="CambiarPagina('http://192.168.56.1:8080/tutor/Actividades.html')">Actividades</button>
+			<br><br>
+		<button id="bNotas" onclick="CambiarPagina('http://192.168.56.1:8080/tutor/Notas.html')">Control de Notas</button>
+			<br><br>
+		<button id="bCortos" disabled="true" onclick="CambiarPagina('http://192.168.56.1:8080/tutor/Cortos.html')">Administrar Cortos</button>
+			<hr><hr>
+		<button id="bSalir" onclick="CambiarPagina('http://192.168.56.1:8080/')">Cerrar Sesion</button>
+
+		<script type="text/javascript" src="UCP.js"></script>
+
+		</center>
+	</body>
+</html>

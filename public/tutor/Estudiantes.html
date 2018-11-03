@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<meta charset="UTF-8">
+		<script type="text/javascript" src="../libraries/p5.js"></script>
+		<script type="text/javascript" src="../libraries/p5.dom.js"></script>
+		<script type="text/javascript" src="../libraries/esenciales.js"></script>
+		<title>Cyste+ Manager</title>
+	</head>
+	<body style="background-color:#d9d9d9">
+		<center>
+				<br><br><br><br>
+			<h1>Cyste+ Manager 1.0</h1>
+			<h2>Estudiante: Mis Estudiantes</h2>
+				<br><br>
+			<button id="bCargarEstudiantes" onclick="CargarEstudiantes()">Cargar</button>
+				<hr><hr>
+			Carnet: <input type="text" id="textBoxCarnet">
+				<br><br>
+			<button id="bAgregarEstudiante" onclick="AgregarEstudiante()">Agregar Estudiante</button>
+				<br><br>
+			<button id="bVisualizarTablaHash" onclick="VisualizarTablaHash()">Ver Tabla Hash</button>
+				<hr><hr>
+			<button id="bSalir" onclick="CambiarPagina('http://192.168.56.1:8080/tutor/UCP.html')">Regresar</button>
+		</center>
+		<script type="text/javascript" src="Estudiantes.js"></script>
+	</body>
+</html>

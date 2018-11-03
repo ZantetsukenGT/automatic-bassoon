@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<meta charset="UTF-8">
+		<script type="text/javascript" src="../libraries/p5.js"></script>
+		<script type="text/javascript" src="../libraries/p5.dom.js"></script>
+		<script type="text/javascript" src="../libraries/esenciales.js"></script>
+		<title>Cyste+ Manager</title>
+	</head>
+	<body style="background-color:#d9d9d9">
+		<center>
+				<br><br><br><br>
+			<h1>Cyste+ Manager 1.0</h1>
+			<h2>Administracion: Administrar Tutores Academicos</h2>
+				<br><br>
+			Estudiante
+			<select id="estudiantesOptions" onchange="estudiantesSelected()">
+			</select>
+			Curso
+			<select id="cursosOptions">
+			</select>
+				<br><br>
+			Periodo: <input type="text" id="textBoxPeriodo" placeholder="e.g 2018">
+
+
+				<hr>
+
+
+			Carnet: <input type="text" id="textBoxCarnet">
+				<br><br>
+			DPI: <input type="text" id="textBoxDPI">
+				<br><br>
+			Nombres: <input type="text" id="textBoxNombres">
+				<br><br>
+			Apellidos: <input type="text" id="textBoxApellidos">
+				<br><br>
+			Email: <input type="text" id="textBoxEmail">
+				<br><br>
+			# Creditos: <input type="text" id="textBoxCreditos">
+
+
+				<hr>
+
+				<button id="bAgregarTutor" onclick="AgregarTutor()">Agregar Tutor</button>
+				<button id="bEliminarTutor" onclick="EliminarTutor()">Eliminar Tutor</button>
+
+				<hr>
+
+
+
+			<button id="bVisualizarAVL" onclick="VisualizarAVL()">Visualizar AVL</button>
+
+
+
+				<hr><hr>
+			<button id="bSalir" onclick="CambiarPagina('http://192.168.56.1:8080/administracion/AdminCP.html')">Regresar</button>
+		</center>
+		<script type="text/javascript" src="Tutores.js"></script>
+	</body>
+</html>

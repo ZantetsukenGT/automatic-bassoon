@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<meta charset="UTF-8">
+		<script type="text/javascript" src="../libraries/p5.js"></script>
+		<script type="text/javascript" src="../libraries/p5.dom.js"></script>
+		<script type="text/javascript" src="../libraries/esenciales.js"></script>
+		<title>Cyste+ Manager</title>
+	</head>
+	<body style="background-color:#d9d9d9">
+		<center>
+				<br><br><br><br>
+			<h1>Cyste+ Manager 1.0</h1>
+			<h2>Administracion: Administrar Estudiantes</h2>
+				<br><br>
+			Cargar Estudiantes:
+				<br><br>
+			<button id="bCargarEstudiantes" onclick="CargarEstudiantes()">Cargar</button>
+				<hr><hr>
+			Carnet: <input type="text" id="textBoxCarnet" placeholder="e.g: 201602988">
+				<br><br>
+			DPI: <input type="text" id="textBoxDPI" placeholder="e.g: 2993 96223 0101">
+				<br><br>
+			Nombres: <input type="text" id="textBoxNombres" placeholder="e.g: Ozmar Rene">
+				<br><br>
+			Apellidos: <input type="text" id="textBoxApellidos" placeholder="e.g: Escobar Avila">
+				<br><br>
+			Email: <input type="text" id="textBoxEmail" placeholder="e.g: algo@algo.algo">
+				<br><br>
+			# Creditos: <input type="text" id="textBoxCreditos" placeholder="e.g: 250">
+				<br><br>
+			Contrasena: <input type="text" id="textBoxContrasena" placeholder="e.g: myP@ss1234">
+
+
+				<hr>
+
+
+
+			Codigo Curso: <input type="text" id="textBoxCodigoCurso" placeholder="e.g: 772">
+				<br><br>
+			Nombre: <input type="text" id="textBoxNombreCurso" placeholder="e.g: edd">
+				<br><br>
+
+			Nota: <input type="text" id="textBoxNotaCurso" placeholder="86">
+				<br><br>
+			Fecha: <input type="text" id="textBoxFechaCurso" placeholder="01/11/2018">      
+				<br><br>
+			<button id="bAgregarCurso" onclick="AgregarCurso()">Agregar Curso Aprobado</button>
+
+
+
+				<hr>
+
+
+
+			<button id="bAgregarEstudiante" onclick="AgregarEstudiante()">Agregar Estudiante</button>
+
+				<hr><hr>
+
+			<input type="text" id="textBoxModificarEliminar" placeholder="e.g: 201602988"">
+			<button id="bBuscar" onclick="BuscarEstudiante()">Buscar</button>
+				<br><br>
+			<button id="bModificar" onclick="ModificarEstudiante()">Modificar Estudiante</button>
+			<button id="bVisualizar" onclick="VisualizarEstudiante()">Visualizar Estudiante</button>
+
+
+
+				<hr><hr>
+
+
+
+			<button id="visualizar" onclick="VisualizarArbol()">Visualizar (Arbol)</button>
+
+
+
+				<hr><hr>
+
+
+
+			<button id="bSalir" onclick="CambiarPagina('http://192.168.56.1:8080/administracion/AdminCP.html')">Regresar</button>
+		</center>
+		<script type="text/javascript" src="Estudiantes.js"></script>
+	</body>
+</html>

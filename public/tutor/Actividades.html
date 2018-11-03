@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<meta charset="UTF-8">
+		<script type="text/javascript" src="../libraries/p5.js"></script>
+		<script type="text/javascript" src="../libraries/p5.dom.js"></script>
+		<script type="text/javascript" src="../libraries/esenciales.js"></script>
+		<title>Cyste+ Manager</title>
+	</head>
+	<body style="background-color:#d9d9d9">
+		<center>
+				<br><br><br><br>
+			<h1>Cyste+ Manager 1.0</h1>
+			<h2>Tutor: Actividades</h2>
+				<br><br>
+			<button id="bCargarActividades" onclick="CargarActividades()">Cargar</button>
+				<hr><hr>
+			Tipo: <input type="text" id="textBoxTipo">
+				<br><br>
+			Nombre: <input type="text" id="textBoxNombre">
+				<br><br>
+			Fecha: <input type="text" id="textBoxFecha">
+				<br><br>
+			Ponderacion: <input type="text" id="textBoxPonderacion">
+				<br><br>
+			Descripcion: <input type="text" id="textBoxDescripcion">
+				<br><br>
+			<button id="bAgregarActividad" onclick="AgregarActividad()">Agregar Actividad</button>
+				<br><br>
+			<button id="bVisualizarActividades" onclick="VisualizarActividades()">Ver Actividades</button>
+				<hr><hr>
+			<button id="bSalir" onclick="CambiarPagina('http://192.168.56.1:8080/tutor/UCP.html')">Regresar</button>
+		</center>
+		<script type="text/javascript" src="Actividades.js"></script>
+	</body>
+</html>

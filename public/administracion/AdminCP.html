@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<meta charset="UTF-8">
+		<script type="text/javascript" src="../libraries/p5.js"></script>
+		<script type="text/javascript" src="../libraries/p5.dom.js"></script>
+		<script type="text/javascript" src="../libraries/esenciales.js"></script>
+		<title>Cyste+ Manager</title>
+	</head>
+	<body style="background-color:#d9d9d9">
+		<center>
+			<br><br><br><br>
+		<h1>Cyste+ Manager 1.0</h1>
+		<h2>Administracion: Control Panel</h2>
+			<hr><hr>
+		<button id="bEstudiantes" onclick="CambiarPagina('http://192.168.56.1:8080/administracion/Estudiantes.html')">Administrar Estudiantes</button>
+			<hr><hr>
+		<button id="bPensum" onclick="CambiarPagina('http://192.168.56.1:8080/administracion/Pensum.html')">Administrar Pensum</button>
+			<br><br>
+		<button id="bTutores" onclick="CambiarPagina('http://192.168.56.1:8080/administracion/Tutores.html')">Administrar Tutores Academicos</button>
+			<br><br>
+		<button id="bCertificados" disabled="true" onclick="CambiarPagina('http://192.168.56.1:8080/administracion/Certificados.html')">Administrar Certificados de Cursos Aprobados</button>
+			<hr><hr>
+		<button id="bSalir" onclick="CambiarPagina('http://192.168.56.1:8080/')">Cerrar Sesion</button>
+
+		<script type="text/javascript" src="AdminCP.js"></script>
+
+		</center>
+	</body>
+</html>
